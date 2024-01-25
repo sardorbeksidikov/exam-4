@@ -1,0 +1,106 @@
+#navbar-responsive {
+  border-radius: 3px;
+  z-index: 200px;
+  background-image: url(../../assets/images/bacrount-img.webp);
+
+  width: 100%;
+  .navbar-button {
+    border-radius: 4px;
+    border: 1px solid #bcd0e5;
+    width: 170px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    &:hover {
+      transform: scale(1.1);
+      background-color: #cf6f49;
+    }
+  }
+  #navbar-close {
+    position: absolute;
+    top: 50px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+  }
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  background-position: center;
+  backdrop-filter: blur(30px);
+  z-index: 10;
+  transition: 0.6s;
+  .navbar-link {
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px 22px;
+    margin-bottom: 20px;
+    color: #ffc000;
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.1px;
+    margin-bottom: 25px;
+    border: 2px solid rgb(160, 160, 236);
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    &:hover {
+      transition: 0.5s;
+      color: green($color: #000000);
+      background-color: #ffc000;
+      color: #fff;
+      transition: 0.5s;
+    }
+  }
+}
+
+.nav-item-last {
+  .nav-link {
+    color: var(--secondary-orange, #ffd3af);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+}
+
+.navbar-flex {
+  display: flex;
+  gap: 30px;
+  .navbar-buttom1 {
+    border-radius: 6px;
+    border: 1px solid #e7e8e3;
+    background: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+    padding: 9px 21px;
+  }
+  .navbar-buttom1:hover {
+    transform: scale(1.1);
+    background-color: #cf6f49;
+    color: #fff;
+    transition: 0.5s;
+  }
+  .header-buttom2 {
+    border-radius: 6px;
+    border: 1px solid #cf6f49;
+    background: #cf6f49;
+    padding: 9px 21px;
+    background-image: url(../images/search.png);
+  }
+  .header-buttom2:hover {
+    transform: scale(1.1);
+    background-color: #cf6f49;
+    color: #fff;
+    transition: 0.5s;
+  }
+}
